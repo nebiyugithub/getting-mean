@@ -7,6 +7,17 @@ if (process.env.NODE_ENV === 'production') {
 
 mongoose.connect(dbURI);
 
+
+/* mongo ds159237.mlab.com:59237/mlab_db -u nebiyu -p MLab_DBPW 
+
+mongodb://nebiyu:MLab_DBPW@ds159237.mlab.com:59237/mlab_db
+
+$ heroku config:set MONGOLAB_URI=mongodb://nebiyu:MLab_DBPW@ds159237.mlab.com:59237/mlab_db
+
+*/
+
+
+
 // Listening for SIGINT on Windows
 var readLine = require("readline");
 if (process.platform === "win32") {
