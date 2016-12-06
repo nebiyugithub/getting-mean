@@ -11,14 +11,6 @@ var routes = require('./app_server/routes/index');
 
 var app = express();
 
-/* mongo ds159237.mlab.com:59237/mlab_db -u nebiyu -p MLab_DBPW 
-
-mongodb://nebiyu:MLab_DBPW@ds159237.mlab.com:59237/mlab_db
-
-$ heroku config:set MONGOLAB_URI=mongodb://nebiyu:MLab_DBPW@ds159237.mlab.com:59237/mlab_db
-
-*/
-
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 app.set('view engine', 'jade');
